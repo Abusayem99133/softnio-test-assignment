@@ -29,7 +29,7 @@ const Navbar = () => {
   );
   return (
     <div>
-      <div className="navbar bg-[#c52a1e] max-w-7xl mx-auto">
+      <div className="navbar  max-w-7xl mx-auto sticky -mb-20">
         <div className="navbar-start">
           <div
             className="flex items-center gap-2
