@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import icon from "../../assets/icon/Group.png";
+import { useState } from "react";
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => setMenuOpen(!menuOpen);
   const navItems = (
     <>
       <li>
@@ -26,10 +29,35 @@ const Navbar = () => {
   );
   return (
     <div>
-      <div className="navbar bg-[#c52a1e]">
+      <div className="navbar bg-[#c52a1e] max-w-7xl mx-auto">
         <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div
+            className="flex items-center gap-2
+          "
+          >
+            <img className="" src={icon} alt="" />
+            <a className=" text-2xl font-bold text-white">Restaurant</a>
+          </div>
+        </div>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1 text-white">{navItems}</ul>
+        </div>
+        <div className="navbar-end">
+          {/* Button visible on larger screens */}
+          <div className="hidden lg:block">
+            <a className="py-2 px-4 bg-[#febf00] uppercase font-bold">
+              Book a Table
+            </a>
+          </div>
+
+          {/* Hamburger menu for smaller screens */}
+          <div className="dropdown lg:hidden">
+            <div
+              role="button"
+              tabIndex={0}
+              className="btn btn-ghost"
+              onClick={toggleMenu}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -45,28 +73,16 @@ const Navbar = () => {
                 />
               </svg>
             </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content bg-red-500 rounded-box z-[1] mt-3 w-52 p-2 shadow text-white"
-            >
-              {navItems}
-            </ul>
+            {/* Dropdown menu */}
+            {menuOpen && (
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content bg-red-500 rounded-box z-[10] mt-3 w-52 p-2 shadow text-white -ml-36"
+              >
+                {navItems}
+              </ul>
+            )}
           </div>
-          <div
-            className="flex items-center gap-2
-          "
-          >
-            <img className="" src={icon} alt="" />
-            <a className=" text-2xl font-bold text-white">Restaurant</a>
-          </div>
-        </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-white">{navItems}</ul>
-        </div>
-        <div className="navbar-end">
-          <a className="py-2 px-4 bg-[#febf00] uppercase font-bold">
-            Book a Table
-          </a>
         </div>
       </div>
     </div>
