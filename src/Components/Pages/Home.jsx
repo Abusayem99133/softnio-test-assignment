@@ -1,4 +1,5 @@
 import Banner from "./Banner";
+import FoodItems from "./FoodItems";
 import MoreAbout from "./MoreAbout";
 import TabBar from "./Tabs/TabBar";
 
@@ -14,7 +15,9 @@ const Home = () => {
           <MoreAbout />
         </div>
       </div>
-      <div></div>
+      <div>
+        <FoodItems />
+      </div>
     </div>
   );
 };
