@@ -9,17 +9,17 @@ const Footer = () => {
   return (
     <div>
       <footer
-        className="footer footer-center bg-cover bg-center bg-no-repeat h-full md:h-[700px] text-white "
+        className="footer footer-center bg-cover bg-center bg-no-repeat h-full md:h-[700px] text-white mt-12 p-6"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${imageF})`,
         }}
       >
         <aside>
-          <p className="font-bold uppercase  text-5xl mb-8">
+          <p className="font-bold uppercase text-2xl xl:text-5xl mb-8">
             We Ready to have you the best dinning experiences
           </p>
 
-          <div className="flex justify-between gap-20 flex-col md:flex-row">
+          <div className="flex justify-between gap-10 xl:gap-20 flex-col md:flex-row">
             <div>
               <span className="text-3xl mx-auto flex justify-center mb-4 font-bold">
                 <CiClock2 className="text-yellow-500" />
