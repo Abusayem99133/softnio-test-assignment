@@ -1,7 +1,6 @@
 import check from "../../assets/about/about2/icons8-checkbox-16.png";
 import bgImage1 from "../../assets/about/about2/f8e8eeffdc29691099a68fb261320bfa.jpeg";
-import dateImage from "../../assets/icon/icons8-date-24.png";
-import peopleImage from "../../assets/icon/Group.png";
+
 import { useState } from "react";
 import "react-datepicker/dist/react-datepicker.css";
 import DatePicker from "react-datepicker";
@@ -11,7 +10,7 @@ const BookTable = () => {
 
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat py-20 md:py-40 lg:py-60"
+      className="bg-cover bg-center bg-no-repeat py-20 md:py-40 lg:py-40"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(${bgImage1})`,
       }}

@@ -1,5 +1,6 @@
 import Banner from "./Banner";
 import BookTable from "./BookTable";
+import Customers from "./Customers";
 import FoodItems from "./FoodItems";
 import MoreAbout from "./MoreAbout";
 import TabBar from "./Tabs/TabBar";
@@ -21,6 +22,9 @@ const Home = () => {
       </div>
       <div>
         <BookTable />
+      </div>
+      <div>
+        <Customers />
       </div>
     </div>
   );
