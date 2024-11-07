@@ -55,7 +55,7 @@ const Navbar = () => {
             <div
               role="button"
               tabIndex={0}
-              className="btn btn-ghost"
+              className="btn btn-ghost text-white"
               onClick={toggleMenu}
             >
               <svg
@@ -77,7 +77,7 @@ const Navbar = () => {
             {menuOpen && (
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-red-500 rounded-box z-[10] mt-3 w-52 p-2 shadow text-white -ml-36"
+                className="menu menu-sm dropdown-content bg-[#c52a1e] rounded-box z-30 mt-3 w-52 p-2 shadow text-white -ml-36"
               >
                 {navItems}
               </ul>

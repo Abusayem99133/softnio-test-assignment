@@ -12,7 +12,7 @@ const Banner = () => {
       }}
     >
       <div className="max-w-7xl mx-auto mt-20 md:mt-40 xl:mt-32">
-        <div className="absolute hidden md:block md:top-72 md:right-12  text-black  rounded-full font-semibold">
+        <div className="absolute hidden md:block md:top-[500px] xl:top-[740px] md:right-12 xl:right-12  text-black  rounded-full font-semibold ">
           <img src={victor} alt="" />
         </div>
         {/* <div className="flex flex-col md:flex-row py-32 items-center justify-between relative">
@@ -61,7 +61,7 @@ const Banner = () => {
             <div className="absolute bottom-4 right-4 bg-[#febf00] text-black  rounded-full font-semibold">
               <img src={offer} alt="" />
             </div>
-            <div className="absolute  md:hidden  md:top-72 md:right-12  text-black  rounded-full font-semibold">
+            <div className="absolute  md:hidden  -top-6 right-1 xl:  text-black  rounded-full font-semibold">
               <img src={victor} alt="" />
             </div>
           </div>

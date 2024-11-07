@@ -34,7 +34,7 @@ const MoreAbout = () => {
           </div>
         </div>
       </div>
-      <div className="hidden md:block absolute right-1 -mt-96">
+      <div className="hidden xl:block absolute right-1 -mt-96">
         <img className="" src={siteImage} alt="" />
       </div>
     </section>
