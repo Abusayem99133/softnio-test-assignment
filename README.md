@@ -15,7 +15,7 @@ React Icons: Provides a collection of icons that can be seamlessly integrated in
 <p>4. Swiper.js: A powerful library for adding smooth and responsive carousels and sliders, perfect for showcasing images or customer testimonials. </P>
 <p>5. React-Tabs: A helpful library for creating tabbed navigation, allowing content to be organized efficiently while saving space and improving navigation.</P>
 <p>6. Vercel: Vercel enables continuous deployment directly from GitHub, automatically reflecting changes on the live site with every push.</P>
-<h2>Technologies Used</h2>
+
 
 <h2>How to Set Up and Run the Project Locally:</h2>
 <p>Follow these steps to run the project on your local machine:</p>
@@ -26,7 +26,7 @@ https://github.com/Abusayem99133/softnio-test-assignment
 </span>
 <hr/>
 <p className:'font-bold'>2. Navigate to frontend directory:</p>
-<span>cd softnio-test-assignment</span>
+<li>cd softnio-test-assignment</li>
 <p>
  <hr/>
 3. Install dependencies:
@@ -34,9 +34,9 @@ https://github.com/Abusayem99133/softnio-test-assignment
 <p>
  Navigate into the project directory and install the required dependencies:
 </p>
-<span> 
+<li> 
 npm install
-</span>
+</li>
 <hr/>
 <p>
  4. Start the Project Locally:
@@ -44,9 +44,9 @@ npm install
 <p>
  Once the dependencies are installed, start the development server to view the project locally:
 </p>
-<p>
+<li>
 npm run dev
-</p>
+</li>
 
 
 
