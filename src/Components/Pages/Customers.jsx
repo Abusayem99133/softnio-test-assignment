@@ -27,7 +27,7 @@ const Customers = () => {
         <h1 className="text-2xl md:text-3xl font-bold my-4">
           What Some Of My Customers Say
         </h1>
-        <div className=" hidden md:block">
+        <div className=" hidden md:block ">
           <button
             ref={prevRef}
             className="text-xl font-bold mr-5 text-black btn btn-circle bg-white shadow-md hover:bg-gray-100"
@@ -273,7 +273,7 @@ const Customers = () => {
       {/* Background Images for Larger Screens */}
       <div className="absolute bottom-[56px] xl:-right-[230px] 2xl:right-[1px] hidden xl:block">
         <img
-          className="xl:w-[40%] 2xl:w-[95%]"
+          className="xl:w-[40%] 2xl:w-[9%]"
           src={bgImage1}
           alt="Background Design"
         />
