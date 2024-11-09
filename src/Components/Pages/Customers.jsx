@@ -44,8 +44,8 @@ const Customers = () => {
           breakpoints={{
             480: { slidesPerView: 1 },
             640: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            1024: { slidesPerView: 4 },
+            768: { slidesPerView: 1 },
+            1024: { slidesPerView: 1 },
           }}
           modules={[FreeMode, Pagination, Navigation]}
           className="mySwiper"
