@@ -1,4 +1,4 @@
-import siteImage from "../../../assets/about/image.png";
+import siteImage from "../../../assets/about/about2/Image.png";
 import "react-tabs/style/react-tabs.css";
 import Contact from "../Contact";
 import About from "./About";
