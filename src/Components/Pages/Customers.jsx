@@ -273,7 +273,7 @@ const Customers = () => {
       {/* Background Images for Larger Screens */}
       <div className="absolute bottom-[56px] xl:-right-[230px] 2xl:right-[1px] hidden xl:block">
         <img
-          className="xl:w-[40%] 2xl:w-[9%]"
+          className="xl:w-[40%] 2xl:w-[90%]"
           src={bgImage1}
           alt="Background Design"
         />
