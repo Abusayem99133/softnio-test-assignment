@@ -12,6 +12,7 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { FreeMode, Navigation, Pagination } from "swiper/modules";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 const Customers = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -26,7 +27,20 @@ const Customers = () => {
         <h1 className="text-2xl md:text-3xl font-bold my-4">
           What Some Of My Customers Say
         </h1>
-
+        <div className=" hidden md:block">
+          <button
+            ref={prevRef}
+            className="text-xl font-bold mr-5 text-black btn btn-circle bg-white shadow-md hover:bg-gray-100"
+          >
+            <IoIosArrowBack />
+          </button>
+          <button
+            ref={nextRef}
+            className="text-xl font-bold text-[#c52a1e] btn btn-circle bg-white shadow-md hover:bg-gray-100"
+          >
+            <IoIosArrowForward />
+          </button>
+        </div>
         <Swiper
           slidesPerView={1}
           spaceBetween={20}
@@ -240,6 +254,20 @@ const Customers = () => {
             </div>
           </SwiperSlide>
         </Swiper>
+        <div className="flex gap-8 md:hidden justify-center mt-4">
+          <button
+            ref={prevRef}
+            className="text-2xl font-bold text-black btn btn-circle bg-white shadow-md hover:bg-gray-100"
+          >
+            <IoIosArrowBack />
+          </button>
+          <button
+            ref={nextRef}
+            className="text-2xl font-bold text-[#c52a1e] btn btn-circle bg-white shadow-md hover:bg-gray-100"
+          >
+            <IoIosArrowForward />
+          </button>
+        </div>
       </div>
 
       {/* Background Images for Larger Screens */}
