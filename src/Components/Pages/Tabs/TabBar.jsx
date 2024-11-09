@@ -1,4 +1,4 @@
-import about from "../../../assets/about/image.png";
+import siteImage from "../../../assets/about/image.png";
 import "react-tabs/style/react-tabs.css";
 import Contact from "../Contact";
 import About from "./About";
@@ -13,7 +13,7 @@ const TabBar = () => {
     <div className="mt-12">
       <div className="flex flex-col md:flex-row justify-between gap-8 p-6">
         <div>
-          <img src={about} alt="" />
+          <img src={siteImage} alt="" />
         </div>
         <Tabs
           selectedIndex={selectedTab}
