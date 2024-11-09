@@ -271,15 +271,15 @@ const Customers = () => {
       </div>
 
       {/* Background Images for Larger Screens */}
-      <div className="absolute bottom-[56px] xl:-right-[230px] 2xl:-right-[20px] hidden xl:block">
+      <div className="absolute bottom-[56px] xl:-right-[230px] 2xl:right-[1px] hidden xl:block">
         <img
-          className="xl:w-[45%] 2xl:w-[90%]"
+          className="xl:w-[40%] 2xl:w-[95%]"
           src={bgImage1}
           alt="Background Design"
         />
       </div>
-      <div className="absolute bottom-[450px] -left-44 hidden xl:block">
-        <img className="w-[70%]" src={bgImage2} alt="Background Design" />
+      <div className="absolute bottom-[450px] -left-28 hidden xl:block">
+        <img className="w-[45%]" src={bgImage2} alt="Background Design" />
       </div>
     </div>
   );
