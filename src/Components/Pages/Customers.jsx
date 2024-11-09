@@ -50,68 +50,132 @@ const Customers = () => {
           modules={[FreeMode, Pagination, Navigation]}
           className="mySwiper"
         >
-          <div className="flex flex-col-reverse lg:flex-row items-center">
-            {/* Testimonial Card */}
-            <div className="bg-[#febf00] w-full lg:w-1/2  relative p-[30px] md:p-[98px] lg:p-[97px] xl:p-[195px] z-10">
-              <p className="md:text-xl text-white flex gap-2 mb-8">
-                <span className="md:text-2xl font-bold text-white ">
-                  <FaQuoteLeft />
-                </span>
-                You can't go wrong with Chicken Mandi, I had it twice. The
-                chicken was cooked perfectly, juicy & soft (usually mandi
-                chicken is a bit dry). I would definitely recommend it.
-              </p>
-              <div className="mt-8 flex items-center justify-between">
-                <div>
-                  <h3 className="uppercase font-bold text-lg text-white">
-                    Khalid Al Dawsry
-                  </h3>
-                  <span className="text-white">Jeddah, Saudi</span>
+          <SwiperSlide>
+            <div className="flex flex-col-reverse lg:flex-row items-center">
+              {/* Testimonial Card */}
+              <div className="bg-[#febf00] w-full lg:w-1/2  relative p-[30px] md:p-[98px] lg:p-[97px] xl:p-[195px] z-10">
+                <p className="md:text-xl text-white flex gap-2 mb-8">
+                  <span className="md:text-2xl font-bold text-white ">
+                    <FaQuoteLeft />
+                  </span>
+                  You can't go wrong with Chicken Mandi, I had it twice. The
+                  chicken was cooked perfectly, juicy & soft (usually mandi
+                  chicken is a bit dry). I would definitely recommend it.
+                </p>
+                <div className="mt-8 flex items-center justify-between">
+                  <div>
+                    <h3 className="uppercase font-bold text-lg text-white">
+                      Khalid Al Dawsry
+                    </h3>
+                    <span className="text-white">Jeddah, Saudi</span>
+                  </div>
+                  <img
+                    className="md:w-12 md:h-12 rounded-full"
+                    src={userImage}
+                    alt="User"
+                  />
                 </div>
-                <img
-                  className="md:w-12 md:h-12 rounded-full"
-                  src={userImage}
-                  alt="User"
-                />
-              </div>
-              <div className="absolute">
+                <div className="absolute">
+                  <progress
+                    className="progress progress-error w-20 md:w-24 h-2 z-10  bg-white -right-44 md:-right-[415px] lg:-right-[180px] mt-3 md:mt-3"
+                    value="100"
+                    max="100"
+                  ></progress>
+                </div>
                 <progress
-                  className="progress progress-error w-20 md:w-24 h-2 z-10  bg-white -right-44 md:-right-[415px] lg:-right-[180px] mt-3 md:mt-3"
+                  className="progress max-w-full h-1 mt-4 bg-white"
                   value="100"
                   max="100"
                 ></progress>
+                {/* Decorative Card Icon */}
+                <div className="absolute bottom-[1px]  left-0 md:left-1 ">
+                  <img
+                    className="w-7 md:w-20 lg:w-20"
+                    src={cardImage}
+                    alt="Decorative Icon"
+                  />
+                </div>
               </div>
-              <progress
-                className="progress max-w-full h-1 mt-4 bg-white"
-                value="100"
-                max="100"
-              ></progress>
-              {/* Decorative Card Icon */}
-              <div className="absolute bottom-[1px]  left-0 md:left-1 ">
-                <img
-                  className="w-7 md:w-20 lg:w-20"
-                  src={cardImage}
-                  alt="Decorative Icon"
-                />
-              </div>
-            </div>
 
-            {/* Video Section */}
-            <div
-              className="relative w-full lg:w-1/2"
-              style={{ paddingBottom: "56.25%" }}
-            >
-              <iframe
-                className="absolute top-0 left-0 w-full h-full z-10"
-                src="https://www.youtube.com/embed/DzSSUU37ynQ?si=HrHxbrHzerW0hnhv"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
+              {/* Video Section */}
+              <div
+                className="relative w-full lg:w-1/2"
+                style={{ paddingBottom: "56.25%" }}
+              >
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full z-10"
+                  src="https://www.youtube.com/embed/DzSSUU37ynQ?si=HrHxbrHzerW0hnhv"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
-          </div>
-          <SwiperSlide></SwiperSlide>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col-reverse lg:flex-row items-center">
+              {/* Testimonial Card */}
+              <div className="bg-[#febf00] w-full lg:w-1/2  relative p-[30px] md:p-[98px] lg:p-[97px] xl:p-[195px] z-10">
+                <p className="md:text-xl text-white flex gap-2 mb-8">
+                  <span className="md:text-2xl font-bold text-white ">
+                    <FaQuoteLeft />
+                  </span>
+                  You can't go wrong with Chicken Mandi, I had it twice. The
+                  chicken was cooked perfectly, juicy & soft (usually mandi
+                  chicken is a bit dry). I would definitely recommend it.
+                </p>
+                <div className="mt-8 flex items-center justify-between">
+                  <div>
+                    <h3 className="uppercase font-bold text-lg text-white">
+                      Khalid Al Dawsry
+                    </h3>
+                    <span className="text-white">Jeddah, Saudi</span>
+                  </div>
+                  <img
+                    className="md:w-12 md:h-12 rounded-full"
+                    src={userImage}
+                    alt="User"
+                  />
+                </div>
+                <div className="absolute">
+                  <progress
+                    className="progress progress-error w-20 md:w-24 h-2 z-10  bg-white -right-44 md:-right-[415px] lg:-right-[180px] mt-3 md:mt-3"
+                    value="100"
+                    max="100"
+                  ></progress>
+                </div>
+                <progress
+                  className="progress max-w-full h-1 mt-4 bg-white"
+                  value="100"
+                  max="100"
+                ></progress>
+                {/* Decorative Card Icon */}
+                <div className="absolute bottom-[1px]  left-0 md:left-1 ">
+                  <img
+                    className="w-7 md:w-20 lg:w-20"
+                    src={cardImage}
+                    alt="Decorative Icon"
+                  />
+                </div>
+              </div>
+
+              {/* Video Section */}
+              <div
+                className="relative w-full lg:w-1/2"
+                style={{ paddingBottom: "56.25%" }}
+              >
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full z-10"
+                  src="https://www.youtube.com/embed/DzSSUU37ynQ?si=HrHxbrHzerW0hnhv"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
 
